@@ -1,11 +1,21 @@
-@mixin viewport-md {
-  @media (min-width: 767px) {
-    @content;
-  }
-}
+@mixin btnStyleV1 {
+    background: $greenV1;
+    color: $white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
 
-@mixin text-gradient {
-	background: var(--hero-name-background);
-	background-clip: text;
-	color: transparent;
+    svg {
+        margin-right: 10px;
+        display: block;
+    }
+
+    &:hover {
+        background: $greenV2;
+        transition: all ease 0.3s;
+    }
 }
