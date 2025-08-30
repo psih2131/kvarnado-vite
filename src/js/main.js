@@ -11,7 +11,11 @@ import readMore from './readMoreTextObject.js'
 
 import changeMapSwitch from './objectMapSwitch.js'
 
+import { gallerySlider, featuresySlider, finishingSlider, simmilarSlider } from './objectSwiperSliders.js'
 
+import { openFeaturesInfo } from './objectFeaturesOpenBtn.js'
+
+import readMoreReview from './objectReviewReadMore.js'
 
 
 fixedHeader()
@@ -23,5 +27,18 @@ swiperSlidersSettings()
 readMore()
 
 changeMapSwitch()
+
+gallerySlider()
+
+featuresySlider()
+
+openFeaturesInfo()
+
+finishingSlider()
+
+readMoreReview()
+
+simmilarSlider()
 // switchThemeColor()
+
 

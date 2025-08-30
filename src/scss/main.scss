@@ -4,15 +4,22 @@
 @import "mixins";
 
 @import "sourse";
+
+//components
+@import "components/wp-text";
+@import "components/object-card";
 @import "header";
-@import "home";
 @import "footer";
-@import "popups";
+
+
+//pages
+@import "home";
 
 @import "blog";
 @import "post";
 
 @import "object";
 
-//components
-@import "components/wp-text";
+
+//libs
+@import "popups";

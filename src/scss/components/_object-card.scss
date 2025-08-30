@@ -1,0 +1,191 @@
+.object {
+    border-radius: 10px;
+    border: 1px solid #E9EAEC;
+    background: $white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.object__img-wrapper {
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+    overflow: hidden;
+    height: 200px;
+    display: block;
+    position: relative;
+
+    &:hover {
+        .object__img {
+            transform: scale(1.03);
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+.object__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+
+
+.object__sale {
+    position: absolute;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 5px 9px;
+    border-radius: 4px;
+    display: inline-block;
+    background: $greenV2;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+    color: $white;
+}
+
+.object__status-row {
+    display: flex;
+    align-items: center;
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.object__status-element {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background: #F5F5F5;
+    margin-right: 5px;
+    color: $darkBlueV3;
+}
+
+.object__main-info {
+    padding: 20px 15px 30px 15px;
+}
+
+.object__title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: $titleFont;
+    margin-bottom: 10px;
+}
+
+.object__title-link {
+    color: $darkBlueV3;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: $greenV1;
+        transition: all ease 0.3s;
+    }
+}
+
+.object__locations-list {
+    margin-bottom: 25px;
+}
+
+.object__locations-list-element {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+
+    svg {
+        display: block;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.object__locations-list-element-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding-left: 10px;
+    width: calc(100% - 19px);
+    color: $greyV1;
+}
+
+.object__price-list {
+    margin-bottom: 25px;
+}
+
+.object__price-list-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.object__price-list-element-name-apart {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    color: $greyV1;
+
+    b {
+        font-weight: 500;
+    }
+}
+
+.object__price-list-element-price {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    color: rgba(20, 174, 92, 0.50);
+}
+
+.object__description {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: $greyV1;
+}
+
+.object__down {
+    padding: 0 15px 15px 15px;
+}
+
+.object__btn {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background: $greyV2;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $darkBlueV3;
+    padding: 14px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+
+    &:hover {
+        background: $greenV4;
+        transition: all ease 0.3s;
+        color: $white;
+    }
+}
