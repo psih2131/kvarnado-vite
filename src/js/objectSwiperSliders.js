@@ -1,6 +1,11 @@
 import 'swiper/css';
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+
+import Swiper from 'swiper/bundle';
+import { Navigation, Pagination, FreeMode, Scrollbar } from 'swiper/modules';
+
+let currentMobPaddingSlider = (+document.querySelector('.header-2025').offsetWidth - +document.querySelector('.header-2025__container').offsetWidth) / 2
+
+console.log(currentMobPaddingSlider, document.querySelector('.header-2025').offsetWidth)
 
 function gallerySlider() {
 
@@ -21,8 +26,8 @@ function gallerySlider() {
             breakpoints: {
                 // when window width is >= 320px
                 300: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+                    slidesPerView: 3,
+                    spaceBetween: 15,
 
                     // centeredSlides: true
                 },
@@ -30,13 +35,13 @@ function gallerySlider() {
 
                 // when window width is >= 320px
                 780: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
+                    slidesPerView: 3,
+                    spaceBetween: 45,
                 },
                 // when window width is >= 480px
                 1281: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 45,
                 },
                 // when window width is >= 640px
                 1540: {
@@ -54,39 +59,60 @@ function featuresySlider() {
 
     if (gallerySlider) {
         const swiperGallery = new Swiper(".features-slider-swiper", {
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, FreeMode, Scrollbar],
             slidesPerView: 5,
             spaceBetween: 20,
             speed: 500,
-            loop: true,
+
+
             navigation: {
                 nextEl: ".features-slider-swiper__next",
                 prevEl: ".features-slider-swiper__prev",
             },
+
+
+
+
+            // pagination: {
+            //     el: ".features-swiper-pagination",
+            //     clickable: true,
+            // },
             breakpoints: {
                 // when window width is >= 320px
                 300: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+                    slidesPerView: 'auto',
+                    spaceBetween: 15,
 
+                    scrollbar: {
+                        el: '.features-swiper-scrollbar',
+                    },
+                    navigation: false,
+                    loop: false,
+
+
+                    slidesOffsetBefore: currentMobPaddingSlider,
+                    slidesOffsetAfter: currentMobPaddingSlider,
                     // centeredSlides: true
                 },
                 // when window width is >= 320px
 
                 // when window width is >= 320px
                 780: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
+                    slidesPerView: 3,
+                    spaceBetween: 20, loop: true,
+
                 },
                 // when window width is >= 480px
                 1281: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
+                    slidesPerView: 4,
+                    spaceBetween: 20, loop: true,
+
                 },
                 // when window width is >= 640px
                 1540: {
                     slidesPerView: 5,
-                    spaceBetween: 20,
+                    spaceBetween: 20, loop: true,
+
                 }
             }
 
@@ -101,7 +127,7 @@ function finishingSlider() {
 
     if (gallerySlider) {
         const swiperGallery = new Swiper(".finishing-slider-swiper", {
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, FreeMode, Scrollbar],
             slidesPerView: 4,
             spaceBetween: 30,
             speed: 500,
@@ -113,8 +139,18 @@ function finishingSlider() {
             breakpoints: {
                 // when window width is >= 320px
                 300: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+                    slidesPerView: 'auto',
+                    spaceBetween: 15,
+
+                    scrollbar: {
+                        el: '.finishing-swiper-scrollbar',
+                    },
+                    navigation: false,
+                    loop: false,
+
+
+                    slidesOffsetBefore: currentMobPaddingSlider,
+                    slidesOffsetAfter: currentMobPaddingSlider,
 
                     // centeredSlides: true
                 },
@@ -124,16 +160,19 @@ function finishingSlider() {
                 780: {
                     slidesPerView: 2,
                     spaceBetween: 20,
+                    loop: true,
                 },
                 // when window width is >= 480px
                 1281: {
                     slidesPerView: 3,
                     spaceBetween: 20,
+                    loop: true,
                 },
                 // when window width is >= 640px
                 1540: {
                     slidesPerView: 4,
                     spaceBetween: 30,
+                    loop: true,
                 }
             }
 
@@ -155,7 +194,7 @@ function simmilarSlider() {
 
     if (gallerySlider) {
         const swiperGallery = new Swiper(".simmilar-slider-swiper", {
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, Scrollbar],
             slidesPerView: 4,
             spaceBetween: 30,
             speed: 500,
@@ -167,10 +206,18 @@ function simmilarSlider() {
             breakpoints: {
                 // when window width is >= 320px
                 300: {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
+                    slidesPerView: 'auto',
+                    spaceBetween: 15,
 
-                    // centeredSlides: true
+                    scrollbar: {
+                        el: '.simmilar-swiper-scrollbar',
+                    },
+                    navigation: false,
+                    loop: false,
+
+
+                    slidesOffsetBefore: currentMobPaddingSlider,
+                    slidesOffsetAfter: currentMobPaddingSlider,
                 },
                 // when window width is >= 320px
 
