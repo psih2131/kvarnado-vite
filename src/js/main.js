@@ -1,6 +1,8 @@
 import '../scss/main.scss'
 
 // import switchThemeColor from './localstaradge.js'
+import { removeElementorStyle } from './wpCustomScripts.js'
+
 import swiperSlidersSettings from './swiperSliders.js'
 
 import fixedHeader from './headerFixed.js'
@@ -17,6 +19,8 @@ import { openFeaturesInfo } from './objectFeaturesOpenBtn.js'
 
 import readMoreReview from './objectReviewReadMore.js'
 
+
+removeElementorStyle()
 
 fixedHeader()
 
