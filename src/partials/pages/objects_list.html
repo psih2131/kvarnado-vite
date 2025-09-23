@@ -1,0 +1,96 @@
+<section class="objects-catalog-sec">
+    <div class="container">
+        <h1 class="objects-catalog-sec__title">
+            Новостройки Москвы — список сданных и строящихся объектов
+        </h1>
+
+        <p class="objects-catalog-sec__description">Воспользуйтесь базой новостроек Москвы для того, чтобы купить
+            квартиру в корпусе, готовом к заселению. На нашем сайте представлено 1673 жилых комплекса и более 48 615
+            готовых квартир от застройщиков. Подобрать квартиру под свой бюджет легко: выберете комнатность, способы
+            покупки, а также установите границу цен.</p>
+
+        <div class="objects-catalog-sec__filtr-row">
+            <div class="objects-catalog-sec__filtr-row-main">
+                <div class="apartment-filtrs">
+
+                    <div class="apartment-filtrs__element filtr-counts">
+                        <div class="filtr-counts__element filtr-counts__element--big">студия</div>
+                        <div class="filtr-counts__element activ">1</div>
+                        <div class="filtr-counts__element">2</div>
+                        <div class="filtr-counts__element">3</div>
+                        <div class="filtr-counts__element">4+</div>
+                    </div>
+
+                    <div class="apartment-filtrs__element price-counts">
+                        <input type="text" class="price-counts__input" placeholder="Цена от">
+                        <input type="text" class="price-counts__input" placeholder="Цена до">
+                    </div>
+
+                    <div class="apartment-filtrs__element level-counts">
+                        <input type="text" class="price-counts__input" placeholder="Этаж от">
+                        <input type="text" class="price-counts__input" placeholder="Этаж до">
+                    </div>
+
+                    <div class="apartment-filtrs__clear-filtrs">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-map-filtr">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 6.5H13.0108M9.75 21.6667L3.25 18.4167V4.33333L5.41667 5.41667M9.75 21.6667L16.25 18.4167M9.75 21.6667V15.1667M16.25 18.4167L22.75 21.6667V7.58333L20.5833 6.5M16.25 18.4167V15.1667M16.25 6.71667C16.25 8.63125 14.625 10.1833 13 11.9167C11.375 10.1833 9.75 8.63125 9.75 6.71667C9.75 4.80208 11.205 3.25 13 3.25C14.795 3.25 16.25 4.80208 16.25 6.71667Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <span>Смотреть на карте</span>
+
+            </div>
+        </div>
+
+        <div class="objects-catalog-sec__wrapper">
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+            {{> components/object }}
+
+        </div>
+
+        <div class="pagination-wrapper pagination-wrapper--objects">
+            <div class="pagination">
+                <a class="prev page-numbers" href="">« Назад</a>
+                <span aria-current="page" class="page-numbers current">1</span>
+                <a class="page-numbers" href="">2</a>
+                <a class="page-numbers" href="">3</a>
+                <span class="page-numbers dots">…</span>
+                <a class="page-numbers" href="">12</a>
+                <a class="next page-numbers" href="">Вперед
+                    »</a>
+            </div>
+        </div>
+    </div>
+</section>

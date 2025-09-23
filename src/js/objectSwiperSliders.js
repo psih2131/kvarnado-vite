@@ -249,5 +249,27 @@ function simmilarSlider() {
 }
 
 
+function simmilarSliderResizeBoxHeight() {
+    // Берём все элементы
+    const elements = document.querySelectorAll('.simmilar-slider-swiper .object');
+    if (elements?.length > 0) {
+        // Находим максимальную высоту
+        let maxHeight = 0;
+        elements.forEach(el => {
+            const height = el.offsetHeight;
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
 
-export { gallerySlider, featuresySlider, finishingSlider, simmilarSlider }
+        // Задаём всем одинаковую высоту
+        elements.forEach(el => {
+            el.style.height = maxHeight + 'px';
+        });
+    }
+}
+
+
+
+
+export { gallerySlider, featuresySlider, finishingSlider, simmilarSlider, simmilarSliderResizeBoxHeight }

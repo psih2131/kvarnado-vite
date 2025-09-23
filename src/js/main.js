@@ -13,7 +13,7 @@ import readMore from './readMoreTextObject.js'
 
 import changeMapSwitch from './objectMapSwitch.js'
 
-import { gallerySlider, featuresySlider, finishingSlider, simmilarSlider } from './objectSwiperSliders.js'
+import { gallerySlider, featuresySlider, finishingSlider, simmilarSlider, simmilarSliderResizeBoxHeight } from './objectSwiperSliders.js'
 
 import { openFeaturesInfo } from './objectFeaturesOpenBtn.js'
 
@@ -43,6 +43,8 @@ finishingSlider()
 readMoreReview()
 
 simmilarSlider()
+
+simmilarSliderResizeBoxHeight()
 // switchThemeColor()
 
 
