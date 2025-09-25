@@ -19,6 +19,8 @@ import { openFeaturesInfo } from './objectFeaturesOpenBtn.js'
 
 import readMoreReview from './objectReviewReadMore.js'
 
+import readMoreHome from './readMoreHomeBtn.js'
+
 
 removeElementorStyle()
 
@@ -45,6 +47,8 @@ readMoreReview()
 simmilarSlider()
 
 simmilarSliderResizeBoxHeight()
+
+readMoreHome()
 // switchThemeColor()
 
 
