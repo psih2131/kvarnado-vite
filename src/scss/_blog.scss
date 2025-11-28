@@ -222,6 +222,11 @@
             border: 1px solid rgba(20, 174, 92, 0.50);
             transition: all ease 0.3s;
         }
+
+        &.current {
+            background: $greenV1;
+            color: $white;
+        }
     }
 
     .prev,
