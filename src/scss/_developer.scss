@@ -1,0 +1,568 @@
+.developer-sec-container {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+.developer-hero-sec {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.developer-hero-sec__header {
+    display: flex;
+    border-radius: 15px;
+    background: #F9F9F9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.developer-hero-sec__left {
+    display: flex;
+    align-items: center;
+}
+
+.developer-hero-sec__logo {
+    border-radius: 6px;
+    border: 1px solid rgba(20, 174, 92, 0.10);
+    width: 135px;
+    height: 135px;
+    overflow: hidden;
+}
+
+.developer-hero-sec__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.developer-hero-sec__data {
+    margin-left: 30px;
+
+    .developer-card__location {
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+.developer-hero-sec__rate-row {
+    display: flex;
+    align-items: center;
+
+    .developer-card__rate-value {
+        margin-top: 0;
+        margin-right: 5px;
+    }
+}
+
+.developer-hero-sec__title {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 16px;
+    font-family: $titleFont;
+    color: $darkBlueV3;
+}
+
+.developer-hero-sec__btn {
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 13px 0;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $white;
+    border-radius: 10px;
+    background: $greenV1;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        background: $greenV2;
+        transition: all ease 0.3s;
+    }
+}
+
+.developer-hero-sec__btn--v2 {
+    background: $greenV4;
+}
+
+.developer-hero-sec__body {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.developer-hero-sec__char-element {
+    width: calc(25% - 19px);
+    margin: 0;
+}
+
+.developer-about-sec {
+    padding-bottom: 120px;
+
+    .object-title-sec {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .object-description-sec__wrapper {
+        margin-top: 25px;
+    }
+
+    .wp-text {
+        p {
+            font-size: 18px;
+        }
+
+        h1,
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        ul {
+            li {
+                font-size: 18px;
+            }
+        }
+
+        ol {
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .object-description-sec__text-btn-wrapper {
+        margin-top: 0;
+    }
+
+    .object-description-sec__text-btn {
+        background: $greyV1;
+
+        &:hover {
+            background: $greenV1;
+        }
+    }
+}
+
+.developer-objects-sec {
+    padding-bottom: 90px;
+}
+
+.developer-objects-sec__title {
+    font-family: $titleFont;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 50px;
+    color: $darkBlueV1;
+}
+
+.developer-objects-sec__wrapper {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .object {
+        width: calc(33.33% - 30px);
+        margin: 0 15px 30px 15px;
+    }
+}
+
+.developer-offers-sec {
+    .offer {
+        width: calc(33.333% - 30px);
+    }
+
+    .object-title-sec {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.developer-map-sec {
+    padding-bottom: 120px;
+}
+
+.developer-map-sec__title {
+    font-family: $titleFont;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 50px;
+    color: $darkBlueV1;
+}
+
+.developer-map-sec__map-wrapper {
+    width: 100%;
+    height: 635px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    #map-objects {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+.developer-other-sec {
+    padding-bottom: 120px;
+}
+
+.developer-other-sec__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: $titleFont;
+    margin-bottom: 50px;
+    color: $darkBlueV1;
+}
+
+.developer-other-sec__simmilar-slider {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+
+    position: relative;
+
+    .swiper-button {
+        top: calc(50% - 30px);
+    }
+
+}
+
+.simmilar--dev-slider-swiper__next {
+    right: calc(-110px + 15px);
+}
+
+.simmilar--dev-slider-swiper__prev {
+    left: calc(-110px + 15px);
+}
+
+.simmilar--dev-slider-swiper {
+    position: relative;
+
+    .swiper-slide {
+        padding: 15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1540px) {}
+
+@media only screen and (max-width: 1480px) {
+    .simmilar--dev-slider-swiper__next {
+        right: -60px;
+    }
+
+    .simmilar--dev-slider-swiper__prev {
+        left: -60px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .simmilar--dev-slider-swiper__next {
+        right: 15px;
+    }
+
+    .simmilar--dev-slider-swiper__prev {
+        left: auto;
+        right: 80px;
+    }
+
+    .developer-other-sec__simmilar-slider .swiper-button {
+        top: 100%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .developer-sec-container {
+        width: 768px;
+    }
+
+    .developer-hero-sec {
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+
+    .developer-hero-sec__title {
+        font-size: 22px;
+    }
+
+    .developer-hero-sec__logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .developer-hero-sec__btn {
+        padding: 10px 0;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .developer-hero-sec__body {
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        .object-char-sec__element {
+            width: calc(50% - 12px);
+            margin-bottom: 24px;
+        }
+    }
+
+    .developer-about-sec .object-title-sec {
+        font-size: 28px;
+    }
+
+    .developer-objects-sec__title {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .developer-objects-sec__wrapper {
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-between;
+
+        .object {
+            width: calc(50% - 12px);
+            margin: 0;
+            margin-bottom: 24px;
+        }
+    }
+
+    .developer-objects-sec {
+        padding-bottom: 60px;
+    }
+
+    .developer-offers-sec .object-title-sec {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .developer-map-sec {
+        padding-bottom: 80px;
+    }
+
+
+
+    .developer-other-sec__title {
+        margin-bottom: 35px;
+        font-size: 28px;
+    }
+
+    .developer-other-sec {
+        padding-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .developer-sec-container {
+        width: 350px;
+    }
+
+    .developer-hero-sec {
+        padding-top: 120px;
+        overflow: hidden;
+    }
+
+    .developer-hero-sec__header {
+        flex-wrap: wrap;
+        border-radius: 0;
+        position: relative;
+        padding: 10px 0;
+
+        &::before {
+            width: 1000px;
+            height: 100%;
+            background: #F9F9F9;
+            left: calc(50% - 390px);
+            top: 0;
+            content: "";
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    .developer-hero-sec__left {
+        position: relative;
+        z-index: 10;
+    }
+
+    .developer-hero-sec__right {
+        position: relative;
+        z-index: 10;
+    }
+
+    .developer-hero-sec__left {
+        flex-wrap: wrap;
+    }
+
+    .developer-hero-sec__logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 6px;
+    }
+
+    .developer-hero-sec__data {
+        display: contents;
+    }
+
+    .developer-hero-sec__rate-row {
+        width: calc(100% - 80px);
+        padding-left: 16px;
+    }
+
+    .developer-hero-sec__title {
+        width: 100%;
+        margin-top: 17px;
+    }
+
+    .developer-hero-sec__right {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .developer-hero-sec__btn {
+        width: calc(50% - 6px);
+        margin-bottom: 0;
+        padding: 12px 0;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .developer-hero-sec__body {
+        margin-top: 35px;
+    }
+
+    .developer-hero-sec__body .object-char-sec__element {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .developer-about-sec {
+        .object-title-sec {
+            font-size: 26px;
+            line-height: 1;
+        }
+
+        .wp-text {
+            p {
+                font-size: 16px;
+            }
+
+            h1,
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+
+            ul {
+                li {
+                    font-size: 16px;
+                }
+            }
+
+            ol {
+                li {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .developer-objects-sec__title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .developer-objects-sec__wrapper .object {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .developer-offers-sec .object-title-sec {
+        font-size: 26px;
+    }
+
+    .developer-map-sec {
+        .developer-sec-container {
+            width: 100%;
+        }
+    }
+
+    .developer-map-sec__title {
+        font-size: 26px;
+        line-height: 1;
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .developer-map-sec__map-wrapper {
+        height: 800px;
+        border-radius: 0;
+    }
+
+    .developer-other-sec__simmilar-slider .swiper-button {
+        display: none;
+    }
+
+    .developer-other-sec__title {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .developer-other-sec {
+        padding-bottom: 60px;
+    }
+
+    .developer-other-sec__simmilar-slider .simmilar--dev-slider-swiper {
+        padding-bottom: 30px;
+    }
+}

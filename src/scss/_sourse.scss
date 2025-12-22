@@ -136,6 +136,12 @@ ul {
 	margin-bottom: 0;
 }
 
+svg {
+	shape-rendering: geometricPrecision;
+	text-rendering: geometricPrecision;
+	image-rendering: optimizeQuality;
+}
+
 .app {
 
 	min-width: 260px;

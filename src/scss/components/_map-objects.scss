@@ -1,0 +1,266 @@
+#map-objects {
+    width: 100%;
+    height: 100%;
+
+    .ymaps-2-1-79-controls__control_toolbar {
+        display: none;
+    }
+
+    .ymaps-2-1-79-ground-pane {
+        filter: grayscale(100%) sepia(10%) hue-rotate(190deg) saturate(120%) brightness(95%);
+    }
+
+    // .ymaps-2-1-79-copyrights-pane {
+    //     filter: grayscale(100%) brightness(95%) contrast(90%);
+    // }
+    .ymaps-2-1-79-gototech {
+        display: none;
+    }
+
+    // .ymaps-2-1-79-placemark-overlay {
+    //     background: red;
+    //     color: red;
+    // }
+
+    .ymaps_https___yastatic_net_s3_front_maps_static_maps_front_jsapi_v2_1_2_1_79_17366432_633106660104islands_circleDotIcon___1E98FF__1E98FF_27x27_1756503394681 {
+        background: $greenV2;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            width: 15px;
+            background: #E6E9EE;
+            height: 15px;
+            position: absolute;
+            content: "";
+            border-radius: 100px;
+        }
+    }
+
+    /* Убираем padding контента */
+    .ymaps-2-1-79-balloon__content {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Убираем padding обёртки */
+    .ymaps-2-1-79-balloon__content>ymaps {
+        padding: 0 !important;
+    }
+
+    /* Убираем рамку */
+    .ymaps-2-1-79-balloon__layout {
+        border-radius: 0;
+    }
+
+    /* Если есть тень — убираем */
+    .ymaps-2-1-79-balloon__shadow {
+        display: none;
+    }
+
+    .ymaps-2-1-79-balloon,
+    .ymaps-2-1-79-balloon__layout,
+    .ymaps-2-1-79-balloon__content {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+
+}
+
+// .square_layout {
+//     width: 136px;
+//     height: 26px;
+//     background: $greenV1;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-radius: 6px;
+//     padding: 0 5px 0 5px;
+//     position: relative;
+//     cursor: pointer;
+//     pointer-events: auto;
+//     /* 🔴 ОБЯЗАТЕЛЬНО */
+//     z-index: 100;
+
+//     svg {
+//         display: block;
+//     }
+
+//     &:before {
+//         content: "";
+//         width: 6px;
+//         left: calc(50% - 3px);
+//         height: 5px;
+//         border-radius: 0 0 3px 3px;
+//         background: $greenV1;
+//         position: absolute;
+//         bottom: -5px;
+//     }
+// }
+
+// .map-marker__text {
+//     font-size: 13px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 100%;
+//     color: $white;
+//     width: calc(100% - 16px);
+//     padding-left: 5px;
+//     text-align: center;
+// }
+
+
+.placemark_layout_container {
+    position: relative;
+}
+
+/* Квадратный макет метки */
+// .square_layout {
+//     position: absolute;
+//     left: -23px;
+//     top: -23px;
+//     width: 46px;
+//     height: 46px;
+//     line-height: 46px;
+//     border: 2px solid #218703;
+//     background-color: #f8fdf7;
+//     color: #218703;
+// }
+
+/* Квадратный макет метки */
+.square_layout {
+    width: 136px;
+    height: 26px;
+    left: -68px;
+    top: -26px;
+    background: $greenV1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 0 5px 0 5px;
+    position: absolute;
+    cursor: pointer;
+    pointer-events: auto;
+
+
+    svg {
+        display: block;
+    }
+
+    &:before {
+        content: "";
+        width: 6px;
+        left: calc(50% - 3px);
+        height: 5px;
+        border-radius: 0 0 3px 3px;
+        background: $greenV1;
+        position: absolute;
+        bottom: -5px;
+    }
+}
+
+
+.map-marker__text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    color: $white;
+    width: calc(100% - 16px);
+    padding-left: 5px;
+    text-align: center;
+}
+
+.custom-balloon {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 320px;
+
+    /* фиксированная */
+
+
+    /* если контента много */
+
+
+    .object {
+        width: 100%;
+    }
+
+    .object__img-wrapper {
+        height: 140px;
+    }
+
+    .object__title-link {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    .object__main-info {
+        padding: 16px 12px 12px 12px;
+    }
+
+    .object__description {
+        display: none;
+    }
+
+    .object__locations-list-element-text {
+        font-size: 12px;
+    }
+
+    .object__locations-list-element svg {
+        width: 15px;
+        height: auto;
+    }
+
+    .object__locations-list {
+        margin-bottom: 20px;
+    }
+
+    .object__price-list-element-name-apart {
+        font-size: 12px;
+    }
+
+    .object__price-list-element-price {
+        font-size: 12px;
+    }
+
+    .object__price-list-element {
+        margin-bottom: 6px;
+    }
+
+    .object__price-list {
+        margin-bottom: 10px;
+    }
+
+    .object__btn {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 10px 0;
+    }
+
+    .object__down {
+        padding: 0 12px 12px 12px;
+    }
+}
+
+.balloon-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-bottom: 10px;
+}
