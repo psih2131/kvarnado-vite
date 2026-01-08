@@ -1,0 +1,251 @@
+.apartment-v2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+    &::before {
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+        border-radius: 15px;
+        position: absolute;
+        left: -15px;
+        top: -15px;
+        content: "";
+        transition: all ease 0.3s;
+        background: #f0f0f0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 0.5;
+        }
+    }
+}
+
+.apartment-v2__img-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: solid 1px $greyV2;
+    position: relative;
+    z-index: 2;
+}
+
+.apartment-v2__img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.apartment-v2__data {
+    width: calc(100% - 150px);
+    padding-left: 30px;
+    z-index: 2;
+}
+
+.apartment-v2__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.apartment-v2__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: $darkBlueV3;
+}
+
+.apartment-v2__col-title {
+    font-size: 14px;
+    color: $greyV1;
+    margin-bottom: 10px;
+}
+
+.apartment-v2__col-value {
+    font-size: 16px;
+    color: $darkBlueV3;
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.apartment-v2__col--adress {
+    width: 30%;
+}
+
+.apartment-v2__col--price {
+    width: 10%;
+}
+
+.apartment-v2__col--data {
+    width: calc(15%);
+}
+
+.offer-v2__wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(247, 247, 247, 0.7);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+
+    .offer__info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .offer__icon-wrapper {
+        margin: 0;
+    }
+
+    .offer__btn-wrapper {
+        margin-top: 0;
+        margin-left: 20px;
+        width: auto;
+    }
+
+}
+
+.offer-v2 {
+    &:hover {
+        .offer-v2__wrapper {
+            background: rgba(234, 234, 234, 0.7);
+            transition: all ease 0.3s;
+        }
+
+        &::before {
+            opacity: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1540px) {}
+
+@media only screen and (max-width: 1280px) {
+    .apartment-v2__img-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .apartment-v2__data {
+        width: calc(100% - 120px);
+        padding-left: 20px;
+    }
+
+    .apartment-v2__title {
+        font-size: 18px;
+    }
+
+    .apartment-v2__row {
+        margin-top: 15px;
+    }
+
+    .apartment-v2__col-title {
+        font-size: 12px;
+    }
+
+    .apartment-v2__col-value {
+        font-size: 14px;
+    }
+
+    .apartment-v2__col--price {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .apartment-v2 {
+        align-items: flex-start;
+    }
+
+    .apartment-v2__img-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .apartment-v2__data {
+        width: calc(100% - 120px);
+    }
+
+    .apartment-v2__title {
+        font-size: 14px;
+    }
+
+    .apartment-v2__col-title {
+        display: none;
+    }
+
+    .apartment-v2__row {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .apartment-v2__col-value {
+        font-size: 12px;
+    }
+
+    .apartment-v2__col--adress {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .apartment-v2__col--data {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .apartment-v2__col--price {
+        width: 100%;
+
+        .apartment-v2__col-value {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+    .apartment-v2__img-wrapper {
+        padding: 10px;
+    }
+
+    .offer-v2 {
+        .offer__icon-wrapper {
+            width: 40px;
+            height: 40px;
+        }
+
+        .offer__btn {
+            font-size: 13px;
+            padding: 12px 20px;
+        }
+
+        .offer__btn-wrapper {
+            margin-left: 10px;
+        }
+
+        .offer-v2__wrapper {
+            width: calc(100% + 20px);
+            left: -10px;
+            height: calc(100% + 20px);
+            top: -10px;
+        }
+    }
+}
