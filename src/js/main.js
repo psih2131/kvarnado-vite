@@ -25,6 +25,8 @@ import loadApart from './loadListAparts.js'
 
 import { simmilarSliderDevelopers } from './developerSliders.js'
 
+import customSelect from './customSelect.js'
+
 
 removeElementorStyle()
 
@@ -57,6 +59,8 @@ readMoreHome()
 loadApart()
 
 simmilarSliderDevelopers()
+
+customSelect()
 
 
 
