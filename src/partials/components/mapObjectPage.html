@@ -1,0 +1,63 @@
+<div class="map-objects-popup">
+
+    <div class="map-objects-popup__filtr-btn-open">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5 13.64H10.5M14.5 13.64L20 4.64001H4L10.5 13.64M14.5 13.64V18.37L10.5 20.64V13.64"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Фильтр
+    </div>
+
+    <div class="map-objects-popup__filtrs-wrapper">
+        <div class="objects-filtrs__element filtr-counts-object">
+            <div class="filtr-counts-object__element">Сдан</div>
+            <div class="filtr-counts-object__element">Строится</div>
+            <div class="filtr-counts-object__element">Не начато</div>
+            <div class="filtr-counts-object__element">Заморожено</div>
+        </div>
+        <select class="objects-filtrs__select">
+            <option disabled="" selected="" hidden="" value="">Выберите опцию</option>
+            <option value="Элит">Элит</option>
+            <option value="Премиум">Премиум</option>
+            <option value="Бизнес">Бизнес</option>
+            <option value="Комфорт">Комфорт</option>
+            <option value="Эконом">Эконом</option>
+        </select>
+
+        <div class="objects-filtrs__price-wrapper">
+            <input type="text" class="objects-filtrs__price-input" placeholder="Цена от">
+            <input type="text" class="objects-filtrs__price-input" placeholder="Цена до">
+        </div>
+
+
+        <div class="apartment-filtrs__btn-row">
+
+            <div class="apartment-filtrs__clear-filtrs "><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                        fill="white"></path>
+                </svg>
+            </div>
+
+            <div class="apartment-filtrs__clear-filtrs apartment-filtrs__search-filtrs"><svg width="21" height="21"
+                    viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.83312 16.0453C4.70531 16.0453 1.3591 12.7575 1.3591 8.69531C1.3591 4.63312 4.70531 1.33878 8.83312 1.33878C12.9609 1.33878 16.3078 4.63312 16.3078 8.69531C16.3078 12.7575 12.9609 16.0453 8.83312 16.0453ZM20.7952 19.8516L15.3753 14.5162C16.7941 12.9741 17.6663 10.9397 17.6663 8.69531C17.6663 3.89156 13.7117 0 8.83312 0C3.95456 0 0 3.89156 0 8.69531C0 13.4925 3.95456 17.3841 8.83312 17.3841C10.941 17.3841 12.8743 16.6556 14.3929 15.4416L19.8345 20.7965C20.1003 21.059 20.5301 21.059 20.7952 20.7965C21.061 20.5406 21.061 20.1141 20.7952 19.8516Z"
+                        fill="white"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-objects-popup__close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                fill="white"></path>
+        </svg>
+    </div>
+
+    {{> components/objects-map }}
+
+</div>

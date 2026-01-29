@@ -1,68 +1,74 @@
-import '../scss/main.scss'
+import "../scss/main.scss";
 
 // import switchThemeColor from './localstaradge.js'
-import { removeElementorStyle } from './wpCustomScripts.js'
+import { removeElementorStyle } from "./wpCustomScripts.js";
 
-import swiperSlidersSettings from './swiperSliders.js'
+import swiperSlidersSettings from "./swiperSliders.js";
 
-import fixedHeader from './headerFixed.js'
+import fixedHeader from "./headerFixed.js";
 
-import openCloseHeaderMobMeny from './headerMobMeny.js'
+import openCloseHeaderMobMeny from "./headerMobMeny.js";
 
-import readMore from './readMoreTextObject.js'
+import readMore from "./readMoreTextObject.js";
 
-import changeMapSwitch from './objectMapSwitch.js'
+import changeMapSwitch from "./objectMapSwitch.js";
 
-import { gallerySlider, featuresySlider, finishingSlider, simmilarSlider, simmilarSliderResizeBoxHeight } from './objectSwiperSliders.js'
+import {
+  gallerySlider,
+  featuresySlider,
+  finishingSlider,
+  simmilarSlider,
+  simmilarSliderResizeBoxHeight,
+} from "./objectSwiperSliders.js";
 
-import { openFeaturesInfo } from './objectFeaturesOpenBtn.js'
+import { openFeaturesInfo } from "./objectFeaturesOpenBtn.js";
 
-import readMoreReview from './objectReviewReadMore.js'
+import readMoreReview from "./objectReviewReadMore.js";
 
-import readMoreHome from './readMoreHomeBtn.js'
+import readMoreHome from "./readMoreHomeBtn.js";
 
-import loadApart from './loadListAparts.js'
+import loadApart from "./loadListAparts.js";
 
-import { simmilarSliderDevelopers } from './developerSliders.js'
+import { simmilarSliderDevelopers } from "./developerSliders.js";
 
-import customSelect from './customSelect.js'
+// import customSelect from './customSelect.js'
 
+removeElementorStyle();
 
-removeElementorStyle()
+fixedHeader();
 
-fixedHeader()
+openCloseHeaderMobMeny();
 
-openCloseHeaderMobMeny()
+swiperSlidersSettings();
 
-swiperSlidersSettings()
+readMore();
 
-readMore()
+changeMapSwitch();
 
-changeMapSwitch()
+gallerySlider();
 
-gallerySlider()
+featuresySlider();
 
-featuresySlider()
+openFeaturesInfo();
 
-openFeaturesInfo()
+finishingSlider();
 
-finishingSlider()
+readMoreReview();
 
-readMoreReview()
+simmilarSlider();
 
-simmilarSlider()
+simmilarSliderResizeBoxHeight();
 
-simmilarSliderResizeBoxHeight()
+readMoreHome();
 
-readMoreHome()
+loadApart();
 
-loadApart()
-
-simmilarSliderDevelopers()
-
-customSelect()
+simmilarSliderDevelopers();
 
 
+document.querySelector('.mapBtnTest').addEventListener('click', () => {
+  document.querySelector('.map-objects-popup').style.display = 'block'
+})
 
 // async function serverRequest() {
 //     try {
@@ -79,8 +85,4 @@ customSelect()
 
 // serverRequest()
 
-
-
 // switchThemeColor()
-
-

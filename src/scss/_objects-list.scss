@@ -73,6 +73,12 @@
     padding-top: 30px;
 }
 
+.objects-catalog-sec__load-more-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
 
 
 
@@ -150,6 +156,20 @@
             width: calc(50% - 30px);
         }
     }
+
+    .objects-filtrs .apartment-filtrs__clear-filtrs {
+        margin-bottom: 0;
+    }
+
+    .objects-filtrs {
+        display: contents;
+    }
+
+    .btn-map-filtr {
+        margin-bottom: 0;
+    }
+
+
 }
 
 @media only screen and (max-width: 780px) {
@@ -159,7 +179,7 @@
     }
 
     .objects-catalog-sec__title {
-        font-size: 26px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
@@ -210,5 +230,21 @@
 
     .pagination-wrapper--objects {
         padding-top: 20px;
+    }
+
+    .btn-map-filtr {
+        margin-top: 20px;
+    }
+
+    .objects-catalog-sec {
+        padding-top: 100px;
+    }
+
+    .objects-catalog-sec__description {
+        display: none;
+    }
+
+    .objects-catalog-sec__filtr-row {
+        margin-top: 30px;
     }
 }

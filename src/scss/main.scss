@@ -13,8 +13,12 @@
 @import "components/map-objects";
 @import "components/apartments-v2";
 @import "components/filtr";
+@import "components/filtrs-objects";
+@import "components/preloader";
+@import "components/map-objects-page";
 @import "header";
 @import "footer";
+
 
 
 //pages
@@ -28,6 +32,9 @@
 
 @import "developers";
 @import "developer";
+
+@import "apartments";
+
 
 
 //libs

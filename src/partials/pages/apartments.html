@@ -1,0 +1,83 @@
+<section class="apartments-page-sec">
+    <div class="apartments-page-sec__container">
+        <h1 class="apartments-page-sec__title">
+            <span class="apartments-page-sec__icon">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.61988 2.21803C2.47527 2.19035 2.32633 2.19494 2.18369 2.23148C2.04106 2.26803 1.90826 2.33562 1.79477 2.42943C1.68128 2.52324 1.58991 2.64095 1.52718 2.77416C1.46445 2.90737 1.43191 3.05279 1.43188 3.20003V21.696H14.0699V5.25003C14.0699 5.01774 13.9891 4.79269 13.8413 4.6135C13.6935 4.43431 13.4879 4.31216 13.2599 4.26803L2.61988 2.21803ZM8.84188 7.12003H11.2779V9.55603H8.84088V7.12103L8.84188 7.12003ZM4.22688 7.12003H6.66288V9.55603H4.22588V7.12103L4.22688 7.12003ZM4.22688 11.886H6.66288V14.322H4.22488V11.886H4.22688ZM6.66288 16.651H4.22488V19.088H6.66188L6.66288 16.651ZM11.2779 11.886H8.84088V14.322H11.2769L11.2779 11.886ZM8.84188 16.651H11.2779V19.088H8.84088V16.651H8.84188ZM15.5729 7.57203L22.5369 9.78703C22.7392 9.85134 22.9157 9.97835 23.041 10.1497C23.1663 10.321 23.2339 10.5278 23.2339 10.74V21.695H15.5739V7.57203H15.5729ZM17.8529 11.887H20.2879V14.323H17.8519V11.887H17.8529ZM20.2879 16.65H17.8519V19.087H20.2879V16.65Z"
+                        fill="white" />
+                </svg>
+            </span>
+
+
+            <span class="apartments-page-sec__title-text">Квартиры и планировки</span>
+        </h1>
+
+        <div class="apartments-page-sec__filtr-wrapper">
+            <div class="apartments-page-sec__types-ads types-ads">
+                <button class="types-ads__btn active">Планировки</button>
+                <button class="types-ads__btn">Квартиры с ремонтом</button>
+            </div>
+            <div class="apartment-filtrs">
+
+                <div class="apartment-filtrs__element filtr-counts">
+                    <div class="filtr-counts__element filtr-counts__element--big">студия</div>
+                    <div class="filtr-counts__element activ">1</div>
+                    <div class="filtr-counts__element">2</div>
+                    <div class="filtr-counts__element">3</div>
+                    <div class="filtr-counts__element">4+</div>
+                </div>
+
+                <div class="apartment-filtrs__element price-counts">
+                    <input type="text" class="price-counts__input" placeholder="Цена от">
+                    <input type="text" class="price-counts__input" placeholder="Цена до">
+                </div>
+
+                <div class="apartment-filtrs__element level-counts">
+                    <input type="text" class="price-counts__input" placeholder="Этаж от">
+                    <input type="text" class="price-counts__input" placeholder="Этаж до">
+                </div>
+
+                <div class="apartment-filtrs__clear-filtrs">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="apartments-page-sec__elements-wrapper">
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+
+            {{> components/apartment_obj }}
+        </div>
+
+        <div class="apartments-page-sec__load-more-btn">
+            <button class="apart-load-more-btn">Загрузить еще (10)</button>
+        </div>
+    </div>
+</section>
