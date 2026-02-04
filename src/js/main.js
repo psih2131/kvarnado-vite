@@ -1,9 +1,14 @@
 import "../scss/main.scss";
 
+import { popup } from 'engram-popup';
+
+import 'engram-popup/dist/index.css';
+
 // import switchThemeColor from './localstaradge.js'
 import { removeElementorStyle } from "./wpCustomScripts.js";
 
 import swiperSlidersSettings from "./swiperSliders.js";
+
 
 import fixedHeader from "./headerFixed.js";
 
@@ -32,6 +37,9 @@ import loadApart from "./loadListAparts.js";
 import { simmilarSliderDevelopers } from "./developerSliders.js";
 
 // import customSelect from './customSelect.js'
+window.popupApi = popup(true, 'dark');
+
+// window.popupApi.openPopup('auth');
 
 removeElementorStyle();
 
@@ -65,10 +73,12 @@ loadApart();
 
 simmilarSliderDevelopers();
 
+if (document.querySelector('.mapBtnTest')) {
+  document.querySelector('.mapBtnTest').addEventListener('click', () => {
+    document.querySelector('.map-objects-popup').style.display = 'block'
+  })
+}
 
-document.querySelector('.mapBtnTest').addEventListener('click', () => {
-  document.querySelector('.map-objects-popup').style.display = 'block'
-})
 
 // async function serverRequest() {
 //     try {

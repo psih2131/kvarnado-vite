@@ -1,0 +1,97 @@
+.auth-popup {
+    width: 400px !important;
+    border: solid 1px #E5E5E5;
+
+    .engram-popup__close {
+        right: 10px;
+        top: 10px;
+        background: $white;
+        border: solid 1px #E5E5E5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+
+        &::before {
+            width: 24px;
+            height: 24px;
+            content: "";
+            position: absolute;
+            background-image: url('/src/img/icons/close.svg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.modal-popup__title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal-popup__subtitle {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: $greyV1;
+}
+
+.auth-btn {
+    width: 100%;
+    background: $darkBlueV1;
+    border-radius: 6px;
+    color: $white;
+    font-size: 14px;
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.modal-popup__buttons-list {
+    margin-top: 30px;
+}
+
+.modal-popup__confirm-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: $greenV6;
+
+    svg {
+        display: block;
+        width: 60px;
+        height: auto;
+    }
+}
+
+.modal-popup__confirm-text {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: $darkBlueV1;
+}
+
+@media only screen and (max-width: 780px) {
+    .auth-popup {
+        width: 350px !important;
+    }
+
+    .modal-popup__confirm-icon {
+        width: 80px;
+        height: 80px;
+
+        svg {
+            width: 50px;
+
+        }
+    }
+}

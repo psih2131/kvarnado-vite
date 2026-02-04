@@ -155,6 +155,88 @@
     display: none;
 }
 
+
+.user-auth {
+    position: relative;
+    margin-left: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        // .user-auth__main {
+        //     background: $darkBlueV1;
+        //     transition: all ease 0.3s;
+        // }
+
+        // .user-auth__name {
+        //     color: $white;
+        //     transition: all ease 0.3s;
+        // }
+
+        .user-auth__dropdown-meny {
+            max-height: 50px;
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+
+
+.user-auth__main {
+    display: flex;
+    border-radius: 100px;
+    align-items: center;
+    padding-right: 10px;
+    transition: all ease 0.3s;
+}
+
+.user-auth__icon-wrapper {
+    width: 42px;
+    height: 42px;
+    border: solid 1px #f0f0f0;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.user-auth__icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.user-auth__name {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #9AA4B2;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+
+.user-auth__dropdown-meny {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.user-auth__dropdown-menu-list-element {
+    a {
+        color: $white;
+        background: $greyV1;
+        padding: 7px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 13px;
+        display: block;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1540px) {
     .header-2025__container {
         width: 1240px;
@@ -279,6 +361,19 @@
         }
     }
 
+    .user-auth__name {
+        display: none;
+    }
+
+    .user-auth__main {
+        padding-right: 0;
+    }
+
+    .user-auth__dropdown-meny {
+        width: 100px;
+        left: calc(50% - 50px);
+    }
+
 }
 
 @media only screen and (max-width: 780px) {
@@ -339,4 +434,6 @@
             padding: 10px 0;
         }
     }
+
+
 }
